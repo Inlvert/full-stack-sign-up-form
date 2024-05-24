@@ -1,13 +1,21 @@
 require("dotenv").config();
 
-const { 
+const {
   PORT,
-  DB_URL
- } = process.env;
+  DB_URL,
+  ACCESS_TOKEN_SECRET,
+  ACCESS_TOKEN_EXPIRES_IN,
+  REFRESH_TOKEN_SECRET,
+  REFRESH_TOKEN_EXPIRES_IN,
+} = process.env;
 
 const CONSTANTS = {
   PORT: PORT,
-  DB_URL: DB_URL
+  DB_URL: DB_URL,
+  ACCESS_TOKEN_SECRET,
+  ACCESS_TOKEN_EXPIRES_IN,
+  REFRESH_TOKEN_SECRET,
+  REFRESH_TOKEN_EXPIRES_IN,
 };
 
 module.exports = CONSTANTS;
