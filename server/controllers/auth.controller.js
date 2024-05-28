@@ -11,6 +11,8 @@ module.exports.registration = async (req, res, next) => {
     const userWithToken = await AuthService.createSession(user);
 
     res.status(201).send({ data: userWithToken });
+
+    console.log(userWithToken);
   } catch (error) {
     next(error);
   }
@@ -36,6 +38,7 @@ module.exports.login = async (req, res, next) => {
     const userWithToken = await AuthService.createSession(user);
 
     res.send({ data: userWithToken });
+    console.log(userWithToken);
   } catch (error) {
     next(error);
   }
