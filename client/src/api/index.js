@@ -69,7 +69,7 @@ httpClient.interceptors.response.use(
 );
 
 export const login = (userData) => httpClient.post("auth/login", userData);
-export const registartion = (userData) =>
-  httpClient.post("auth/registartion", userData);
+export const registration = (userData) =>
+  httpClient.post("auth/registration", userData);
 export const refresh = (refreshToken) =>
   httpClient.post("auth/refresh", { refreshToken });
