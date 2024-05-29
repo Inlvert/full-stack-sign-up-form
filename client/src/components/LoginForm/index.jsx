@@ -4,6 +4,7 @@ import { Formik, Form, Field } from "formik";
 import * as yup from "yup";
 import {} from "redux";
 import { login } from "../../redux/slices/authSlice";
+import styles from './LoginForm.module.scss';
 
 const LOGIN_SCHEMA = yup.object({
   email: yup.string().email().required(),
@@ -30,10 +31,11 @@ function LoginForm(props) {
       onSubmit={hendleSubmit}
       validationSchema={LOGIN_SCHEMA}
     >
-      <Form>
-        <Field name="email" type="email" placeholder="email" />
-        <Field name="password" type="password" placeholder="password" />
-        <button type="submit">Login</button>
+      <Form className={styles.wrapper}>
+        <h1 className={styles.text}>Login</h1>
+        <Field name="email" type="email" placeholder="Email" className={styles.textInput}/>
+        <Field name="password" type="password" placeholder="Password" className={styles.textInput}/>
+        <button type="submit" className={styles.btn}>Login</button>
       </Form>
     </Formik>
   );
