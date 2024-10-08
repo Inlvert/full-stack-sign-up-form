@@ -1,4 +1,4 @@
-const SERVER_URL = 'form-client-lilac.vercel.app/';
+const SERVER_URL = 'form-server-pied.vercel.app/';
 
 const CONSTANTS = {
   HTTP_SERVER_URL: `https://${SERVER_URL}`,
