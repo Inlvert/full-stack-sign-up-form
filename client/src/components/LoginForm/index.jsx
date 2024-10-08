@@ -12,8 +12,8 @@ const LOGIN_SCHEMA = yup.object({
 });
 
 const initialValues = {
-  email: "Ibrahfefeim2@mail.com",
-  password: "12345sometext",
+  email: "test2@mail.com",
+  password: "user12345",
 };
 
 function LoginForm(props) {
