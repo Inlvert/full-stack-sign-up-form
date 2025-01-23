@@ -1,4 +1,4 @@
-const SERVER_URL = 'form-server-pied.vercel.app/';
+const SERVER_URL = 'full-stack-sign-up-form-izms.vercel.app/';
 
 const CONSTANTS = {
   HTTP_SERVER_URL: `https://${SERVER_URL}`,
